@@ -6,8 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "-------- LINT --------": "",
+    "lint": "concurrently \"bun:lint:*\"",
+    "lint:prettier": "prettier . --write",
+    "lint:eslint": "eslint . --fix",
+    "lint:stylelint": "stylelint \"src/**/*.{css,scss}\" --fix --allow-empty-input"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -28,6 +32,8 @@
     "eslint-config-next": "15.1.4",
     "inquirer": "9",
     "postcss": "^8",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   },
