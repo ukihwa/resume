@@ -24,7 +24,7 @@ const patchedConfig = fixupConfigRules([
 const config = [
   { files: ['**/*.{js,mjs,cjs,ts,tsx}'] },
   {
-    ignores: ['.next/*'],
+    ignores: ['.next/*', 'out/*'],
   },
   ...patchedConfig,
   ...ts.configs.recommended,

@@ -12,7 +12,13 @@ export default {
     fontFamily: {
       sans: ['var(--font-sans)', 'sans'],
     },
+    colors: {
+      selection: 'var(--selection)',
+    },
     extend: {
+      textColor: {
+        body: 'var(--text-body)',
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
