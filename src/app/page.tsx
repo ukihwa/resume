@@ -1,4 +1,5 @@
 import { Header } from '~/components/header';
+import { Summary } from '~/components/summary';
 import { RESUME } from '~/constants';
 
 export default function Home() {
@@ -16,6 +17,10 @@ export default function Home() {
         aria-label="Resume Content"
       >
         <Header />
+
+        <div className="space-y-8 print:space-y-4">
+          <Summary summary={RESUME.summary} />
+        </div>
       </section>
     </main>
   );

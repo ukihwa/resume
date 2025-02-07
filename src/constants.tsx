@@ -6,13 +6,12 @@ export const RESUME = {
   location: 'Daegu, South Korea, KST',
   locationLink: 'https://www.google.com/maps/place/Daegu',
   about:
-    'Detail-oriented Full Stack Engineer dedicated to building high-quality products.',
+    '품질 높은 제품 구현을 위해 세세한 부분까지 신경 쓰는 풀스택 개발자입니다.',
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+      프론트엔드에 강점을 가진 풀스택 개발자로, React 기반 고성능 애플리케이션과
+      Node.js 서버 개발을 전문으로 합니다. 실시간 협업 시스템 구축 경험과 함께
+      기술 아키텍처 설계 및 원격 팀 관리 능력을 보유하고 있습니다.
     </>
   ),
   avatarUrl: 'https://avatars.githubusercontent.com/u/193446077?v=4',
