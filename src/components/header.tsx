@@ -10,7 +10,7 @@ interface LocationLinkProps {
 
 function LocationLink({ location, locationLink }: LocationLinkProps) {
   return (
-    <p className="max-w-md items-center text-pretty font-mono text-xs text-foreground">
+    <p className="font-mono max-w-md items-center text-pretty text-xs text-foreground">
       <a
         className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
         href={locationLink}
@@ -34,7 +34,7 @@ interface SocialButtonProps {
 function SocialButton({ href, icon: Icon, label }: SocialButtonProps) {
   return (
     <a
-      className="hover:bg-selection hover:text-body rounded p-1 transition-colors"
+      className="rounded p-1 transition-colors hover:bg-selection hover:text-body"
       href={href}
       aria-label={label}
       target="_blank"
@@ -53,7 +53,7 @@ interface ContactButtonsProps {
 function ContactButtons({ contact, personalWebsiteUrl }: ContactButtonsProps) {
   return (
     <div
-      className="flex gap-x-1 pt-1 font-mono text-sm text-foreground/80 print:hidden"
+      className="font-mono flex gap-x-1 pt-1 text-sm text-foreground/80 print:hidden"
       role="list"
       aria-label="Contact links"
     >
@@ -91,7 +91,7 @@ interface PrintContactProps {
 function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
   return (
     <div
-      className="hidden gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]"
+      className="font-mono hidden gap-x-2 text-sm text-foreground/80 print:flex print:text-[12px]"
       aria-label="Print contact information"
     >
       {personalWebsiteUrl && (
@@ -139,7 +139,7 @@ export function Header() {
           {RESUME.name}
         </h1>
         <p
-          className="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px]"
+          className="font-mono max-w-md text-pretty text-sm text-foreground/80 print:text-[12px]"
           aria-labelledby="resume-name"
         >
           {RESUME.about}

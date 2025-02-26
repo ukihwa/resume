@@ -1,5 +1,6 @@
 import { Header } from '~/components/header';
 import { Summary } from '~/components/summary';
+import { WorkExperience } from '~/components/work-experience';
 import { RESUME } from '~/constants';
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
 
         <div className="space-y-8 print:space-y-4">
           <Summary summary={RESUME.summary} />
+          <WorkExperience work={RESUME.work} />
         </div>
       </section>
     </main>

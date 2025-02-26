@@ -103,4 +103,7 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+  ul {
+    @apply list-inside list-disc;
+  }
 }
