@@ -1,5 +1,6 @@
 import { Education } from '~/components/education';
 import { Header } from '~/components/header';
+import { Skills } from '~/components/skills';
 import { Summary } from '~/components/summary';
 import { WorkExperience } from '~/components/work-experience';
 import { RESUME } from '~/constants';
@@ -24,6 +25,7 @@ export default function Home() {
           <Summary summary={RESUME.summary} />
           <WorkExperience work={RESUME.work} />
           <Education education={RESUME.education} />
+          <Skills skills={RESUME.skills} />
         </div>
       </section>
     </main>

@@ -1,4 +1,5 @@
 import { GithubIcon, MdiLinkedin, TwitterXIcon } from '~/components/ui/icons';
+import { HappyedutechLogo, PlikaLogo } from '~/images/logos';
 
 export const RESUME = {
   name: 'Hana Jeong',
@@ -75,7 +76,7 @@ export const RESUME = {
   work: [
     {
       company: '(주)해피에듀테크',
-      link: 'https://film.io',
+      link: 'https://www.happyedutech.com/',
       badges: [
         'Remote',
         'React',
@@ -85,7 +86,7 @@ export const RESUME = {
         'Flutter',
       ],
       title: 'Frontend Lead & Cross-Platform App Developer',
-      // logo: ConsultlyLogo,
+      logo: HappyedutechLogo,
       start: '2024.05',
       end: '2025.05',
       description: (
@@ -112,10 +113,10 @@ export const RESUME = {
     },
     {
       company: '(주)플리카',
-      link: 'https://parabol.co',
+      link: 'https://plika.land/ko',
       badges: ['Remote', 'React', 'Next.js', 'TypeScript', 'Java', 'Flutter'],
       title: 'Frontend Lead & Cross-Platform App Developer',
-      // logo: ParabolLogo,
+      logo: PlikaLogo,
       start: '2022.07',
       end: '2024.04',
       description: (
@@ -144,17 +145,19 @@ export const RESUME = {
     },
   ],
   skills: [
-    'React/Next.js/Remix',
+    'React/Next.js/Remix/Astro',
     'TypeScript',
     'Tailwind CSS',
+    'Emotion',
     'Design Systems',
-    'WebRTC',
     'WebSockets',
-    'Node.js',
-    'GraphQL',
-    'Relay',
+    'Zustand',
+    'Redux',
+    'Jotai',
+    'TanStack Query',
+    'Nest.js',
+    'Java',
     'System Architecture',
-    'Remote Team Leadership',
   ],
   projects: [
     {
