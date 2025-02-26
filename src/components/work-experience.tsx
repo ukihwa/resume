@@ -1,42 +1,9 @@
-import { Badge } from '~/components/ui/badge';
+import BadgeList from '~/components/badge-list';
 import { Card, CardContent, CardHeader } from '~/components/ui/card';
 import { Section } from '~/components/ui/section';
 import { RESUME } from '~/constants';
-import { cn } from '~/lib/utils';
 
 type WorkExperience = (typeof RESUME)['work'][number];
-type WorkBadges = readonly string[];
-
-interface BadgeListProps {
-  className?: string;
-  badges: WorkBadges;
-}
-
-/**
- * Renders a list of badges for work experience
- * Handles both mobile and desktop layouts through className prop
- */
-function BadgeList({ className, badges }: BadgeListProps) {
-  if (badges.length === 0) return null;
-
-  return (
-    <ul
-      className={cn('inline-flex list-none gap-x-1 p-0', className)}
-      aria-label="Technologies used"
-    >
-      {badges.map((badge) => (
-        <li key={badge}>
-          <Badge
-            variant="secondary"
-            className="align-middle text-xs print:px-1 print:py-0.5 print:text-[8px] print:leading-tight"
-          >
-            {badge}
-          </Badge>
-        </li>
-      ))}
-    </ul>
-  );
-}
 
 interface WorkPeriodProps {
   start: WorkExperience['start'];

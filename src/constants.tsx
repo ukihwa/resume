@@ -39,10 +39,37 @@ export const RESUME = {
   },
   education: [
     {
-      school: 'Wrocław University of Technology',
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: '2007',
-      end: '2010',
+      school: '엘리스 SW Engineer 트랙 1기',
+      badges: ['React', 'TypeScript', 'Styled Components', 'Redux', 'Node.js'],
+      degree: (
+        <>
+          <ul className="list-inside list-disc">
+            <li className="list-item">
+              4개월 동안 웹 프론트엔드 기술 집중 학습
+            </li>
+            <li className="list-item">
+              웹 표준, 웹 접근성, 크로스 브라우징에 대한 이해
+            </li>
+            <li className="list-item">자바스크립트 동작 원리 심화 학습</li>
+            <li className="list-item">
+              React.js 및 Node.js를 활용한 웹 서비스 개발 경험
+            </li>
+            <li className="list-item">Git을 이용한 협업 및 코드 관리 경험</li>
+            <li className="list-item">
+              Agile Scrum 방법론 적용한 프로젝트 진행
+            </li>
+          </ul>
+        </>
+      ),
+      start: '2021.10',
+      end: '2022.02',
+    },
+    {
+      school: '대구가톨릭대학교 (4년제)',
+      badges: [],
+      degree: '일어일문전공',
+      start: '2012.03',
+      end: '2018.02',
     },
   ],
   work: [

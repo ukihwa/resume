@@ -1,3 +1,4 @@
+import { Education } from '~/components/education';
 import { Header } from '~/components/header';
 import { Summary } from '~/components/summary';
 import { WorkExperience } from '~/components/work-experience';
@@ -14,7 +15,7 @@ export default function Home() {
       </div>
 
       <section
-        className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
+        className="bg-white mx-auto w-full max-w-2xl space-y-8 print:space-y-4"
         aria-label="Resume Content"
       >
         <Header />
@@ -22,6 +23,7 @@ export default function Home() {
         <div className="space-y-8 print:space-y-4">
           <Summary summary={RESUME.summary} />
           <WorkExperience work={RESUME.work} />
+          <Education education={RESUME.education} />
         </div>
       </section>
     </main>
