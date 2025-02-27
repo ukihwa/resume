@@ -1,3 +1,6 @@
+import { Metadata } from 'next';
+
+import { CommandMenu } from '~/components/command-menu';
 import { Education } from '~/components/education';
 import { Header } from '~/components/header';
 import { Projects } from '~/components/projects';
@@ -5,6 +8,53 @@ import { Skills } from '~/components/skills';
 import { Summary } from '~/components/summary';
 import { WorkExperience } from '~/components/work-experience';
 import { RESUME } from '~/constants';
+
+export const metadata: Metadata = {
+  title: `${RESUME.name} - Resume`,
+  description: RESUME.about,
+  openGraph: {
+    title: `${RESUME.name} - Resume`,
+    description: RESUME.about,
+    type: 'profile',
+    locale: 'ko_KR',
+    images: [
+      {
+        url: 'https://cv.jarocki.me/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: `${RESUME.name}'s profile picture`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${RESUME.name} - Resume`,
+    description: RESUME.about,
+    images: ['https://cv.jarocki.me/opengraph-image'],
+  },
+};
+
+/**
+ * Transform social links for command menu
+ */
+function getCommandMenuLinks() {
+  const links = [];
+
+  if (RESUME.personalWebsiteUrl) {
+    links.push({
+      url: RESUME.personalWebsiteUrl,
+      title: 'Personal Website',
+    });
+  }
+
+  return [
+    ...links,
+    ...RESUME.contact.social.map((socialMediaLink) => ({
+      url: socialMediaLink.url,
+      title: socialMediaLink.name,
+    })),
+  ];
+}
 
 export default function Home() {
   return (
@@ -30,6 +80,10 @@ export default function Home() {
           <Projects projects={RESUME.projects} />
         </div>
       </section>
+
+      <nav className="print:hidden" aria-label="Quick navigation">
+        <CommandMenu links={getCommandMenuLinks()} />
+      </nav>
     </main>
   );
 }
