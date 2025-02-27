@@ -161,8 +161,9 @@ export function Header() {
         />
       </div>
 
-      <Avatar className="size-28" aria-hidden="true">
+      <Avatar className="h-32 w-28 rounded-lg shadow" aria-hidden="true">
         <AvatarImage
+          className="object-cover object-top"
           alt={`${RESUME.name}'s profile picture`}
           src={RESUME.avatarUrl}
         />

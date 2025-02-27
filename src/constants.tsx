@@ -1,5 +1,10 @@
-import { GithubIcon, MdiLinkedin, TwitterXIcon } from '~/components/ui/icons';
-import { HappyedutechLogo, PlikaLogo } from '~/images/logos';
+import { GithubIcon, InstagramIcon } from '~/components/ui/icons';
+import {
+  HappyedutechLogo,
+  MathtutorLogo,
+  PlikalandLogo,
+  PlikaLogo,
+} from '~/images/logos';
 
 export const RESUME = {
   name: 'Hana Jeong',
@@ -10,12 +15,17 @@ export const RESUME = {
     'Detail-oriented Full Stack Engineer dedicated to building high-quality products.',
   summary: (
     <>
-      프론트엔드에 강점을 가진 풀스택 개발자로, React 기반 고성능 애플리케이션과
-      Nest.js 서버 개발을 전문으로 합니다. 실시간 협업 시스템 구축 경험과 함께
-      기술 아키텍처 설계 및 원격 팀 관리 능력을 보유하고 있습니다.
+      사용자와 자연스럽게 상호작용하는 경험을 만들고, 복잡한 것을 단순하고
+      직관적으로 개선하는 것에 열정을 가진 풀스택 개발자입니다.
+      <br /> React 기반의 고성능 애플리케이션과 Nest.js 서버 개발을 전문으로
+      하며, 실시간 협업 시스템 구축 및 기술 아키텍처 설계 경험을 보유하고
+      있습니다. 이타성의 자기계발을 실천하며, 주변 사람들에게 도움을 주는 것에서
+      큰 동기를 얻습니다. 세상의 지식을 내 것으로 만들어 더 나은 서비스를 만드는
+      데 기여하고자 합니다.
     </>
   ),
-  avatarUrl: 'https://avatars.githubusercontent.com/u/193446077?v=4',
+  avatarUrl:
+    'https://www.saramin.co.kr/zf_user/persons/picture?idx=21398293|87b8fdeb20b3a5c4182d4673e6561d54449b5666dcef784d775b1c8bac7d0dfd',
   personalWebsiteUrl: 'https://ukihwa.github.io',
   contact: {
     email: 'ukihwa@gmail.com',
@@ -27,15 +37,20 @@ export const RESUME = {
         icon: GithubIcon,
       },
       {
-        name: 'X',
-        url: 'https://x.com/ukihwa',
-        icon: TwitterXIcon,
+        name: 'Instagram',
+        url: 'https://instagram.com/ukihwa',
+        icon: InstagramIcon,
       },
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/ukihwa/',
-        icon: MdiLinkedin,
-      },
+      // {
+      //   name: 'X',
+      //   url: 'https://x.com/ukihwa',
+      //   icon: TwitterXIcon,
+      // },
+      // {
+      //   name: 'LinkedIn',
+      //   url: 'https://www.linkedin.com/in/ukihwa/',
+      //   icon: MdiLinkedin,
+      // },
     ],
   },
   education: [
@@ -113,7 +128,7 @@ export const RESUME = {
     },
     {
       company: '(주)플리카',
-      link: 'https://plika.land/ko',
+      link: 'https://plika.io',
       badges: ['Remote', 'React', 'Next.js', 'TypeScript', 'Java', 'Flutter'],
       title: 'Frontend Lead & Cross-Platform App Developer',
       logo: PlikaLogo,
@@ -161,45 +176,93 @@ export const RESUME = {
   ],
   projects: [
     {
-      title: 'Monito',
-      techStack: ['TypeScript', 'Next.js', 'Browser Extension', 'PostgreSQL'],
+      title: '매쓰튜터',
+      techStack: ['React', 'Flutter', 'Firebase', 'NestJs', 'MySQL', 'AWS'],
       description:
-        'Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports',
-      // logo: MonitoLogo,
+        'AI 기반 수학 문제 풀이 서비스, 매쓰튜터. 사진만 찍으면 AI가 단계별 풀이, 개념 설명, 유사 문제, 개념 영상, 전자칠판 편집을 제공합니다. 새로운 UI와 기능을 적용했습니다.',
+      logo: MathtutorLogo,
       link: {
-        label: 'monito.dev',
-        href: 'https://monito.dev/',
+        label: 'mathtutor',
+        href: 'https://play.google.com/store/apps/details?id=kr.mathtutor&hl=ko',
       },
     },
     {
-      title: 'Consultly',
+      title: 'PLIKALAND',
       techStack: [
         'TypeScript',
         'Next.js',
-        'Vite',
-        'GraphQL',
-        'WebRTC',
-        'Tailwind CSS',
-        'PostgreSQL',
-        'Redis',
+        'Spring Boot',
+        'MariaDB',
+        'Three.js',
+        'WebGL',
+        'Unity',
+        'WebSocket',
+        'Supabase',
       ],
       description:
-        'Platform for online consultations with real-time video meetings and scheduling',
-      // logo: ConsultlyLogo,
+        '3D 가상 공간을 구축하고 소통할 수 있는 메타버스 플랫폼. 3D 오브젝트 업로드 및 커스터마이징, 인벤토리, 포털 기능을 제공하며, 실시간 채팅과 음성·영상 대화를 지원합니다. WebGL 로딩 최적화, Next.js 마이그레이션, CI/CD 자동화를 통해 개발 생산성을 높였습니다.',
+      logo: PlikalandLogo,
       link: {
-        label: 'consultly.com',
-        href: 'https://consultly.com/',
+        label: 'plika.land',
+        href: 'https://plika.land/ko',
       },
     },
     {
-      title: 'Minimalist CV',
-      techStack: ['TypeScript', 'Next.js', 'Tailwind CSS'],
+      title: 'SHADE',
+      techStack: [
+        'TypeScript',
+        'Next.js',
+        'Flutter',
+        'Riverpod',
+        'WebSocket',
+        'Supabase',
+      ],
       description:
-        'An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub',
-      // logo: MonitoLogo,
+        '건설 현장의 문서를 효율적으로 관리하는 서비스. 출퇴근 및 인적 관리, 문서 작성 및 업로드, 관리자 결재, 서류 보관 및 보안 기능을 제공합니다. MVVVM 패턴과 Riverpod을 활용해 생산성을 높였으며, Supabase를 기반으로 사용자 인증 시스템을 구축했습니다.',
+      // logo: ShadeLogo,
       link: {
-        label: 'Minimalist CV',
-        href: 'https://github.com/BartoszJarocki/cv',
+        label: 'shade.so',
+        href: 'https://shade.so',
+      },
+    },
+    {
+      title: '관악S밸리',
+      techStack: [
+        'TypeScript',
+        'Next.js',
+        'Spring Boot',
+        'MariaDB',
+        'Three.js',
+        'WebGL',
+        'Unity',
+        'WebSocket',
+      ],
+      description:
+        '관악S밸리를 위한 전용 3D 가상 공간 서비스. 3D 맵 뷰어, 가상 공간 및 콘텐츠 관리, 실시간 채팅, 음성·영상 대화를 지원하며, 3D 오브젝트 업로드 및 커스터마이징 기능을 제공합니다. Redux와 RTK Query를 활용해 상태 관리와 데이터 패칭을 최적화했으며, 유지보수와 CS 이슈 대응을 강화했습니다.',
+      logo: PlikalandLogo,
+      link: {
+        label: 'svalley.plika.land',
+        href: 'https://svalley.plika.land/',
+      },
+    },
+    {
+      title: 'CLICKSPACE',
+      techStack: [
+        'TypeScript',
+        'Next.js',
+        'Spring Boot',
+        'MariaDB',
+        'Three.js',
+        'WebGL',
+        'Unity',
+        'WebSocket',
+      ],
+      description:
+        '숙명아이를 위한 전용 3D 가상 공간 서비스. 3D 가상 공간 및 콘텐츠 관리, 실시간 채팅, 음성·영상 대화, 3D 오브젝트 업로드 및 커스터마이징 기능을 제공합니다. Headless UI를 활용해 애니메이션 트랜지션을 개선하고, WebGL 로딩 최적화 및 Redux, RTK Query를 활용한 효율적인 상태 관리와 데이터 패칭을 구현했습니다.',
+      logo: PlikalandLogo,
+      link: {
+        label: 'clickspace.kr',
+        href: 'https://clickspace.kr',
       },
     },
   ],
